@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    {% load static %}
+    <link rel="shortcut icon" href="{% static 'images/myfavicon.ico' %}">
+    <!-- Author Meta -->
+    <meta name="author" content="Nsikan_Patrick">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    <title>{% block title %} {% endblock %}</title>
+
+    <!-- CSS links ============================================= -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/linearicons.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+
+<body>
+
+<!-- Header section -->
+<header>
+    <nav class="navigation">
+        <div class="nav-content">
+            <div class="logo-box"><a href="#hero">Nsikan Patrick</a></div>
+            <ul class="menu-items">
+                <div class="icn btn-cancel">
+                    <i class="fa fa-times"></i>
+                </div>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contacts">Contact</a></li>
+            </ul>
+            <div class="icn btn-menu">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- End of Header section -->
+
+<!--Main content section-->
+<div id="page-wrap">
+    {% block content %}
+    {% endblock %}
+</div>
+<!-- End of main content section -->
+
+<!-- start footer Area -->
+<!--<footer class="footer-area section-gap">-->
+<!--    <div class="container">-->
+<!--        <div class="row">-->
+<!--            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 single-footer-widget caption-footer-widget footer-caption">-->
+<!--                <h3 class="text-center text-white caption">Netaleads Digital Agency </h3>-->
+<!--                <h5 class="text-center ">Expanding your horizon</h5>-->
+<!--            </div>-->
+<!--            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 single-footer-widget footer-widgets">-->
+<!--                <h4>Top Products</h4>-->
+<!--                <ul>-->
+<!--                    <li><a href="#">Managed Website</a></li>-->
+<!--                    <li><a href="#">Manage Reputation</a></li>-->
+<!--                    <li><a href="#">Power Tools</a></li>-->
+<!--                    <li><a href="#">Marketing Service</a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 single-footer-widget footer-widgets">-->
+<!--                <h4>Quick Links</h4>-->
+<!--                <ul>-->
+<!--                    <li><a href="#">About</a></li>-->
+<!--                    <li><a href="#">Services</a></li>-->
+<!--                    <li><a href="#">Contact us</a></li>-->
+<!--                    <li><a href="#">Terms of Service</a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
+
+<!--            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 single-footer-widget footer-widgets">-->
+<!--                <h4>Resources</h4>-->
+<!--                <ul>-->
+<!--                    <li><a href="https://colorlib.com" target="_blank">Colorlib</a></li>-->
+<!--                    <li><a href="#">Agencies</a></li>-->
+<!--                    <li><a href="#">Brand Assets</a></li>-->
+<!--                    <li><a href="#">Investor Relations</a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 single-footer-widget footer-widgets footer-social-widget">-->
+
+<!--                <h4>Join us on</h4>-->
+<!--                <div class="row social-icons">-->
+
+<!--                    <a href="#" class="social-icon"><i class="fa fa-facebook-f"></i></a>-->
+
+
+<!--                    <a href="#"><i class="fa fa-twitter"></i></a>-->
+
+
+<!--                    <a href="#"><i class="fa fa-instagram"></i></a>-->
+
+
+<!--                    <a href="#"><i class="fa fa-linkedin"></i></a>-->
+
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="row footer-bottom d-flex justify-content-between">-->
+<!--            <p class="col-lg-12 col-md-12 col-sm-12 footer-text m-0 text-white text-center">-->
+<!--                &lt;!&ndash; Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. &ndash;&gt;-->
+<!--                Copyright &copy;-->
+<!--                <script>document.write(new Date().getFullYear());</script>-->
+<!--                Netaleads digital agency | All rights reserved-->
+<!--                &lt;!&ndash; Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. &ndash;&gt;-->
+<!--            </p>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</footer>-->
+<!-- End footer Area -->
+
+{% load static %}
+<script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+<script src="{% static 'js/vendor/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+<script src="{% static 'js/parallax.min.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/isotope.pkgd.min.js"></script>
+<script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
+<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'js/jquery.sticky.js' %}"></script>
+<script src="{% static 'js/tawk.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+
+
+</body>
+
+</html>
