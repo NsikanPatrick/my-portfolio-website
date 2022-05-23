@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+
 {% extends 'base.html' %}
 
 {% block title %} Nsikan Patrick {% endblock %}
@@ -14,8 +13,6 @@
         <div class="hero-section" data-parallax="scroll"
              data-image-src="{% static 'images/coding screen - edited.jpg' %}">
             <div class="overlay-bg overlay"></div>
-            <img src="">
-            <!--		<h1 class="site-name">Netaleads</h1>-->
             <div class="container">
                 <div class="row fullscreen">
                     <div class="hero-content col-lg-12">
@@ -23,19 +20,13 @@
                             <h3>Hi there,</h3>
                             <h1>My name is <br>
                                 Nsikan Patrick</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis eaque esse nisi
-                                omnis quaerat quidem sapiente soluta, temporibus tenetur veniam?</p>
-                            <a href="#projects" class="cta" type="button">Portfolio</a>
+                            <p> I love building things that help people gain access to information through
+                                the internet. I also love simplifying complex systems and making them friendly
+                                and accessible to all.</p>
+                            <a href="#portfolio" class="btn cta" type="button">Portfolio</a>
                         </div>
 
                     </div>
-                </div>
-            </div>
-            <div class="hero-social">
-                <div class="d-flex meta-left no-padding">
-                    <a href="#"><span class="fa fa-facebook-f"></span></a>
-                    <a href="#"><span class="fa fa-twitter"></span></a>
-                    <a href="#"><span class="fa fa-instagram"></span></a>
                 </div>
             </div>
         </div>
@@ -45,42 +36,30 @@
 
     <!--	Start about section-->
     <section id="about" class="section-gap">
-        <div class="about-section">
-            <div class="container">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-left">
-                        <div class="about-img">
-                            <img class="img-fluid" src="{% static 'images/Me2.jpg' %}">
-                        </div>
-                    </div>
-<!--                                    <div class="col-lg-7 col-md-12 about-left">-->
-<!--                                        <img class="img-fluid" src="{% static 'images/about-main.jpg' alt='' %}">-->
-<!--                                    </div>-->
-                    <div class="col-lg-5 col-md-12 about-right">
-                        <div class="section-title text-left about-title">
-                            <h4>About Us</h4>
-                            <h2>We are world's <br/> number one</h2>
-                        </div>
-                        <div>
-                            <p>
-                                Face male he light it moveth darkness winged eveni seas after life every gathering is
-                                forth
-                                two
-                                kind lesser i
-                                from seas him open him From creepeth after, life is above image from replenish behold
-                                great
-                            </p>
-                        </div>
-                        <div class="rm"><a href="#" class="cta">Read More</a></div>
-                    </div>
+        <div class="about container">
+            <div class="col-left">
+                <div class="about-img">
+                    <img src="{% static 'images/Me2.jpg' %}">
                 </div>
+            </div>
+            <div class="col-right">
+                <h1 class="section-title">About <span>Me</span></h1>
+                <h2>Fullstack web developer</h2>
+                <p>My name is Nsikan Patrick and i'm passionate about building things that make people's lives
+                    easier and better. I started my journey into web development and programming way back in 2014 while
+                    still in the University. Ever since then, i've worked with several startups and businesses
+                    to help build experiences that translate to leads; and i've done that passionately.
+                    I am currently doing this as a freelancer and i'm also open for new positions in the web development
+                    industry.
+                    When i'm not working, i love listening to music, surf the internet and learn to play the guitar.</p>
+                <a href="{% url 'resume' %}" class="btn cta">Download resume</a>
             </div>
         </div>
     </section>
     <!-- End About Area -->
 
     <!--Hire area-->
-    <section id="features-area">
+    <section id="why-hire">
 
         <div class="features">
             <h1 class="section-title">Why hire <span>Me</span></h1>
@@ -129,6 +108,215 @@
               d="M0,0L48,26.7C96,53,192,107,288,112C384,117,480,75,576,53.3C672,32,768,32,864,32C960,32,1056,32,1152,48C1248,64,1344,96,1392,112L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
     </svg>
     <!--end of why us section-->
+
+    <!-- Start portfolio Area -->
+    <section id="portfolio" class="section-gap">
+        <div class="portfolio-area">
+            <h1 class="section-title">Recent <span>Projects</span></h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 about-left portfolio-stack">
+                        <div class="card">
+                            <img class="card-img-top" src="{% static 'images/about-main.jpg' alt='' %}"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Project</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up
+                                    the
+                                    bulk of
+                                    the
+                                    card's content.</p>
+                                <div class="text-center"><a href="#" class="btn my-btn">Visit site</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 about-left portfolio-stack">
+                        <div class="card">
+                            <img class="card-img-top" src="{% static 'images/about-main.jpg' alt='' %}"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Project</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up
+                                    the
+                                    bulk of
+                                    the
+                                    card's content.</p>
+                                <div class="text-center"><a href="#" class="btn my-btn">Visit site</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 about-left portfolio-stack">
+                        <div class="card">
+                            <img class="card-img-top" src="{% static 'images/about-main.jpg' alt='' %}"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Project</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up
+                                    the
+                                    bulk of
+                                    the
+                                    card's content.</p>
+                                <div class="text-center"><a href="#" class="btn my-btn">Visit site</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 about-left portfolio-stack">
+                        <div class="card">
+                            <img class="card-img-top" src="{% static 'images/about-main.jpg' alt='' %}"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Project</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up
+                                    the
+                                    bulk of
+                                    the
+                                    card's content.</p>
+                                <div class="text-center"><a href="#" class="btn my-btn">Visit site</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End portfolio Area -->
+
+    <!--    Site features area-->
+    <section id="site-features-area">
+        <div class="site-features-area">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-6 col-md-12 why_us_image about-left">
+                        <img class="img-fluid" src="{% static 'images/about-main.jpg' alt='' %}">
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 about-right">
+                        <div class="section-title text-left">
+
+                            <h2>Websites I Build</h2>
+                        </div>
+                        <div>
+                            <p>
+                                Face male he light it moveth darkness winged eveni seas after life every gathering is
+                                forth two
+                                kind lesser i
+                                from seas him open him From creepeth after, life is above image from replenish behold
+                                great Face
+                                male he light it moveth darkness winged eveni seas after life every gathering is forth
+                                two kind
+                                lesser i
+                                from seas him open him From creepeth after, life is above image from replenish behold
+                                great
+                            </p>
+                            <h3>Hence, i build websites that are:</h3>
+                            <div class="site-features">
+
+                            <div class="site-feature-item"><i class="fa fa-desktop fa-3x"> </i><h4>Product Research</h4></div>
+                            <div class="site-feature-item"><i class="fa fa-desktop fa-3x"> </i><h4>Product Research</h4></div>
+                            <div class="site-feature-item"><i class="fa fa-desktop fa-3x"> </i><h4>Product Research</h4></div>
+                            </div>
+                        </div>
+                        <div class="site-features-btn">
+                        <a href="#contacts" class="btn cta">Hire Me</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg"
+         xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
+                <g class="wave" fill="#f3f3f3">
+                    <path
+                            d="M1440,84 C1383.555,64.3 1342.555,51.3 1317,45 C1259.5,30.824 1206.707,25.526 1169,22 C1129.711,18.326 1044.426,18.475 980,22 C954.25,23.409 922.25,26.742 884,32 C845.122,37.787 818.455,42.121 804,45 C776.833,50.41 728.136,61.77 713,65 C660.023,76.309 621.544,87.729 584,94 C517.525,105.104 484.525,106.438 429,108 C379.49,106.484 342.823,104.484 319,102 C278.571,97.783 231.737,88.736 205,84 C154.629,75.076 86.296,57.743 0,32 L0,0 L1440,0 L1440,84 Z"
+                    ></path>
+                </g>
+                <g transform="translate(1.000000, 15.000000)" fill="#263a4e">
+                    <g transform="translate(719.500000, 68.500000) rotate(-180.000000) translate(-719.500000, -68.500000) ">
+                        <path d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
+                              opacity="0.100000001"></path>
+                        <path
+                                d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
+                                opacity="0.100000001"
+                        ></path>
+                        <path d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z"
+                              opacity="0.200000003"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </svg>
+
+    <!--    End of site features area-->
+
+    <!--    Contacts section -->
+    <section id="contacts">
+        <div class="contacts container">
+            <div>
+                <h1 class="section-title">Contact</h1>
+            </div>
+            <div class="contacts-body">
+
+                <div class="contact">
+                    <div class="icon"><i class="fa fa-map-marker fa-fw"></i></div>
+                    <div class="contact-info">
+                        <h2>Nigeria/Remote</h2>
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="icon"><i class="fa fa-phone fa-fw"></i></div>
+                    <div class="contact-info">
+                        <h2>+234-9054599187</h2>
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="icon"><i class="fa fa-envelope-o fa-fw"></i></div>
+                    <div class="contact-info">
+                        <h2><a href="mailto:nsikanpatrick69@gmail.com">nsikanpatrick69@gmail.com</a></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    End of contacts  section-->
+
+    <!--    Footer section-->
+    <section id="footer">
+        <div class="footer container">
+            <div class="brand"><h1>Get in touch</h1></div>
+            <div class="social-icons">
+
+                <div class="social-item">
+                    <a href="https://twitter.com/nsikanadaowo" target="_blank"><i class="fa fa-twitter fa-fw"></i></a>
+                </div>
+                <div class="social-item">
+                    <a href="https://www.linkedin.com/in/nsikan-adaowo-8b7663127/" target="_blank"><i
+                            class="fa fa-linkedin fa-fw"></i></a>
+                </div>
+                <div class="social-item">
+                    <a href="https://github.com/NsikanPatrick" target="_blank"><i class="fa fa-github fa-fw"></i></a>
+                </div>
+                <div class="social-item">
+                    <a href="https://www.instagram.com/nsikanadaowo/?hl=en" target="_blank"><i
+                            class="fa fa-instagram fa-fw"></i></a>
+                </div>
+            </div>
+            <p>Copyright &copy; <span><script>document.write(new Date().getFullYear())</script>
+                </span> . All rights reserved
+            </p>
+        </div>
+    </section>
+    <!--    End of footer section-->
 </div>
 
 
