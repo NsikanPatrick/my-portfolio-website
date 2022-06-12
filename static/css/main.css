@@ -132,31 +132,11 @@ a{
 .navigation.sticky{
     /*background-image: linear-gradient(-10deg, #000 0%, #343a40 120% );*/
     background: #263a4e;
-    padding: 21px 0;
+    padding: 23px 0;
 }
 /* End of navigation styles */
 
 /* Hero section */
-
-/* this section of css worked with the data-image-src property in the index file, but the image failed
-to display on mobile, hence i had to dump it and use the section below
-
-.hero-section{
-    position: relative;
-}
-
-.hero-section::after{
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-    background: #050a34;
-    opacity: 0.6;
-    content: '';
-}
-*/
 
 #hero{
     background: url("../images/coding screen - edited.jpg") no-repeat;
@@ -443,6 +423,7 @@ to display on mobile, hence i had to dump it and use the section below
 
 .feature p{
     margin-bottom:0px;
+    font-size: 18px;
     }
 
 .feature:hover i{
@@ -505,7 +486,7 @@ to display on mobile, hence i had to dump it and use the section below
 }
 
 .site-feature-item p{
-    font-size: 17px;
+    font-size: 18px;
 }
 
 .site-feature-item i, .site-feature-item h4{
