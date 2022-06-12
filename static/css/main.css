@@ -132,7 +132,7 @@ a{
 .navigation.sticky{
     /*background-image: linear-gradient(-10deg, #000 0%, #343a40 120% );*/
     background: #263a4e;
-    padding: 21px 0;
+    padding: 23px 0;
 }
 /* End of navigation styles */
 
@@ -417,6 +417,10 @@ to display on mobile, hence i had to dump it and use the section below
     .feature i{
         margin-bottom:20px
         }
+        .features h1.section-title{
+            padding-right: 5%;
+            padding-left: 5%;
+        }
     }
 
 .features h1.section-title{
@@ -427,6 +431,8 @@ to display on mobile, hence i had to dump it and use the section below
 @media (max-width: 767px){
     .features h1.section-title{
     padding-top: 24%;
+    padding-left: 20px;
+    padding-right: 20px;
     }
 }
 
@@ -473,6 +479,13 @@ to display on mobile, hence i had to dump it and use the section below
     margin-bottom: 90px;
 }
 
+@media (max-width: 767px){
+    .portfolio-area h1.section-title{
+    padding-left: 20px;
+    padding-right: 20px;
+    }
+}
+
 .portfolio-stack{
     margin-bottom: 30px;
 }
@@ -513,9 +526,26 @@ to display on mobile, hence i had to dump it and use the section below
     color: #cea06c;
 }
 
+.site-feature-item i{
+    font-size: 50px;
+}
+
+.site-feature-item h4{
+    font-size: 28px;
+}
+
 @media (max-width: 868px){
     .site-features-area{
     margin-top: 70px;
+    }
+    .site-feature-item i{
+        font-size: 70px;
+    }
+    .site-feature-item p{
+        font-size:19px;
+    }
+    .site-feature-item h4{
+        margin-bottom: 15px;
     }
 }
 
