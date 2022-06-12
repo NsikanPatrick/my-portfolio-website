@@ -10,8 +10,10 @@
 <div class="main-panel">
     <!-- Hero section -->
     <section id="hero">
+<!--        Try using data-src instead of data-image-src-->
         <div class="hero-section" data-parallax="scroll"
-             data-image-src="{% static 'images/coding screen - edited.jpg' %}">
+             data-image-src="{% static 'image now displayed in css as this on had issues with
+             displaying on mobile' %}">
             <div class="overlay-bg overlay"></div>
             <div class="container">
                 <div class="row fullscreen">
@@ -21,8 +23,8 @@
                             <h1>My name is <br>
                                 Nsikan Patrick</h1>
                             <p> I love building things that help people gain access to information through
-                                the internet. I also love simplifying complex systems and making them friendly
-                                and accessible to all.</p>
+                                the internet. I also love simplifying complex systems and make them friendly
+                                and accessible for all.</p>
                             <a href="#portfolio" class="btn cta" type="button">Portfolio</a>
                         </div>
 
@@ -45,59 +47,74 @@
             <div class="col-right">
                 <h1 class="section-title">About <span>Me</span></h1>
                 <h2>Fullstack web developer</h2>
-                <p>My name is Nsikan Patrick and i'm passionate about building things that make people's lives
-                    easier and better. I started my journey into web development and programming way back in 2014 while
-                    still in the University. Ever since then, i've worked with several startups and businesses
+                <p>My name is Nsikan Patrick and i'm passionate about building things that make people's live
+                    easier and better. I started my journey into web development and programming way back in 2015 while
+                    in the University. Ever since then, i've worked with several startups and businesses
                     to help build experiences that translate to leads; and i've done that passionately.
                     I am currently doing this as a freelancer and i'm also open for new positions in the web development
                     industry.
-                    When i'm not working, i love listening to music, surf the internet and learn to play the guitar.</p>
+                    When i'm not working, i love listening to music, surf the internet and learn to play the piano.</p>
                 <a href="{% url 'resume' %}" class="btn cta">Download resume</a>
             </div>
         </div>
     </section>
     <!-- End About Area -->
 
-    <!--Hire area-->
-    <section id="why-hire">
+    <!--Services area-->
+    <section id="services">
 
         <div class="features">
-            <h1 class="section-title">Why hire <span>Me</span></h1>
+            <h1 class="section-title">Services <span>Rendered</span></h1>
             <div class="container">
-
                 <div class="row feature-items">
-
+                    <div class="services-intro text-center">
+                        <p>For the past 5+ years, web design and development has been my bread and butter.
+                            Within those years, i've discovered that with my skills, i can help startups and
+                            companies scale their businesses and generate more leads. Hence; to do this, i've
+                            streamlined my services to the following:
+                        </p>
+                    </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="feature">
-                            <i class="fa fa-shopping-cart fa-2x"></i>
-                            <h4>Creative Design</h4>
-                            <p>Hac facilisi ac vitae consec tetu commodo vel magna suspendisse on senectus pharetra
-                                magnfauc </p>
+                            <i class="fa fa-desktop fa-2x"></i>
+                            <h4>Web Design</h4>
+                            <p class="text-justify">Design is the core of my work, and i believe in the power of brand. I bring ideas
+                                to life by designing experiences that communicate visually inspiring stories
+                                guaranteed to produce results. I do this by deploying creative methodologies in
+                                producing designs tailored to meet your user's needs. </p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="feature">
                             <i class="fa fa-code fa-2x"></i>
-                            <h4>Experienced Style</h4>
-                            <p>Hac facilisi ac vitae consec tetu commodo vel magna suspendisse on senectus pharetra
-                                magnfauc </p>
+                                <h4>Web development</h4>
+                            <p class="text-justify">I specialize in building custom websites and applications
+                                that help companies and startups communicate their value and connect with
+                                customers. These may include landing pages, corporate websites, custom online
+                                platforms, and more. </p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="feature">
-                            <i class="fa fa-desktop fa-2x"></i>
-                            <h4>Product Research</h4>
-                            <p>Hac facilisi ac vitae consec tetu commodo vel magna suspendisse on senectus pharetra
-                                magnfauc </p>
+                            <i class="fa fa-search-plus fa-2x"></i>
+                            <h4>SEO</h4>
+                            <p class="text-justify">SEO is no longer just a way to reach customers, it's a way to build your brand and
+                                earn their trust. By combining the most effective SEO strategies with
+                                modern online tools, my services will deliver results that generate leads
+                                and keep you at the top of your competition.
+                            </p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="feature">
-                            <i class="fa fa-check fa-2x"></i>
+                            <i class="fa fa-pencil-square-o fa-2x"></i>
                             <!--						<i class="fi flaticon-beach"></i>-->
-                            <h4>Affordable Price</h4>
-                            <p>Hac facilisi ac vitae consec tetu commodo vel magna suspendisse on senectus pharetra
-                                magnfauc </p>
+                            <h4>Content creation</h4>
+                            <p class="text-justify">Content is king, but it takes more than
+                                just good content for your business to get noticed. That is where I come in.
+                                I will help you develop compelling, relevant and authentic stories that can
+                                reinforce your brand image and drive your marketing and sales efforts.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -107,7 +124,7 @@
         <path fill="#263a4e" fill-opacity="1"
               d="M0,0L48,26.7C96,53,192,107,288,112C384,117,480,75,576,53.3C672,32,768,32,864,32C960,32,1056,32,1152,48C1248,64,1344,96,1392,112L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
     </svg>
-    <!--end of why us section-->
+    <!--end of services section-->
 
     <!-- Start portfolio Area -->
     <section id="portfolio" class="section-gap">
@@ -194,34 +211,48 @@
     <section id="site-features-area">
         <div class="site-features-area">
             <div class="container">
-                <div class="row align-items-center justify-content-center">
+                <div class="row align-items-center justify-content-center features-box">
                     <div class="col-lg-6 col-md-12 why_us_image about-left">
                         <img class="img-fluid" src="{% static 'images/about-main.jpg' alt='' %}">
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 about-right">
                         <div class="section-title text-left">
-
-                            <h2>Websites I Build</h2>
+                            <h1>I Build Websites That Are:</h1>
                         </div>
-                        <div>
-                            <p>
-                                Face male he light it moveth darkness winged eveni seas after life every gathering is
-                                forth two
-                                kind lesser i
-                                from seas him open him From creepeth after, life is above image from replenish behold
-                                great Face
-                                male he light it moveth darkness winged eveni seas after life every gathering is forth
-                                two kind
-                                lesser i
-                                from seas him open him From creepeth after, life is above image from replenish behold
-                                great
-                            </p>
-                            <h3>Hence, i build websites that are:</h3>
+                        <div class="features-content">
                             <div class="site-features">
 
-                            <div class="site-feature-item"><i class="fa fa-desktop fa-3x"> </i><h4>Product Research</h4></div>
-                            <div class="site-feature-item"><i class="fa fa-desktop fa-3x"> </i><h4>Product Research</h4></div>
-                            <div class="site-feature-item"><i class="fa fa-desktop fa-3x"> </i><h4>Product Research</h4></div>
+                            <div class="site-feature-item"><i class="fa fa-mobile fa-4x"> </i>
+                                <h4>Mobile responsive</h4>
+                                <p class="text-justify">Every website i build is mobile-friendly and optimized
+                                    for search engines. I consider aesthetics and performance in the design process
+                                    and i'm always committed to exceeding your expectations. I ensure that
+                                    every product delivered is pixel-perfect for
+                                    every screen, giving your users the best experience possible. My commitment
+                                    is to ensure that your website makes an impact and connects with the people
+                                    that matter to you.
+                                </p>
+                            </div>
+                            <div class="site-feature-item"><i class="fa fa-rocket fa-3x"> </i>
+                                <h4>Fast loading</h4>
+                                <p class="text-justify">First impressions make all the difference. With
+                                    fast-loading, SEO-friendly and mobile-ready websites, you can be sure of giving
+                                    your clients that professional touch that will keep them glued to your brand.
+                                    I make use of the fastest and cleanest code available for lightning fast loading
+                                    speeds and advanced web technologies to optimize every part of the product
+                                    for efficiency, without compromising the style or function.
+                                </p>
+                            </div>
+                            <div class="site-feature-item"><i class="fa fa-shield fa-3x"> </i>
+                                <h4>Safe and secure</h4>
+                                <p class="text-justify">I build websites using the latest technology
+                                    to ensure it’s safe, secure, and easy for you to manage. I build
+                                    state-of-the-art products with security in mind. This will guarantee the
+                                    confidence of your clients in your brand. My service provides high-quality
+                                    web solutions that will grow your business and ensure you reach your business
+                                    goals within the shortest possible time.
+                                </p>
+                            </div>
                             </div>
                         </div>
                         <div class="site-features-btn">
