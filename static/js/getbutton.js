@@ -12,3 +12,5 @@
         var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
     })();
 <!-- /GetButton.io widget -->
+
+// To use a whatsapp chat functionality, go to getbutton.io
