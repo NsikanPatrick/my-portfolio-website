@@ -22,4 +22,4 @@ urlpatterns = [
     path('', include('my_portfolio.urls')),
 ]
 
-urlpatterns += staticfiles_urlpatterns
+urlpatterns += staticfiles_urlpatterns()
