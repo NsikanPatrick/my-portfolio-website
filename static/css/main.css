@@ -39,7 +39,7 @@ a{
     justify-content: center;
 }
 
-.cta{
+.cta, .card a{
     margin-top: 30px;
     display: inline-block;
     padding: 10px 30px;
@@ -53,9 +53,18 @@ a{
     transition-property: background-color, color;
 }
 
-.cta:hover{
+.cta:hover, .card a:hover{
     background: #cea06c;
     color: #fff;
+}
+
+.site-features-area .feature i{
+    color: #cea06c !important;
+}
+
+.site-feature-item-title{
+    padding-top: 80px;
+    padding-bottom: 60px;
 }
 
 /* End of general site styles */
