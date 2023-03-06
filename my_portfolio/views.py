@@ -11,5 +11,5 @@ def index(request):
 
 def resume(request):
     # filepath = os.path.join('static', 'Resume.pdf')
-    filepath = os.path.join('static', 'NSIKAN ADAOWO - FULL STACK DEVELOPER.pdf')
+    filepath = os.path.join('static', 'NSIKAN ADAOWO - SOFTWARE ENGINEER.pdf')
     return FileResponse(open(filepath, 'rb'), content_type='application/pdf')
