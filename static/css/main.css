@@ -348,7 +348,8 @@ a{
 /* Services Features area */
 
 .features{
-    background: #263a4e;
+    background-color: #263a4e;
+    /* background-color: rgba(38, 58, 78, 1); */
     color: #fff;
 }
 
@@ -455,7 +456,8 @@ a{
 }
 
 #portfolio{
-    margin-top: -70px;
+    margin-top: -110px;
+    padding: 5px;
 }
 
 .portfolio-area h1{
@@ -638,6 +640,7 @@ a{
     /* background-image: linear-gradient(-10deg, #000 0%, #20b2aa 120% );*/
     background: #263a4e;
     margin-top: 50px;
+    padding-top: 50px;
     padding-bottom: 20px;
 }
 
