@@ -456,8 +456,8 @@ a{
 }
 
 #portfolio{
-    margin-top: -110px;
-    padding: 5px;
+    margin-top: -190px;
+    /* padding: 5px; */
 }
 
 .portfolio-area h1{
@@ -777,3 +777,4 @@ a{
     }
 /* Hero */
 
+}

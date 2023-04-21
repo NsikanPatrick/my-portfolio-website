@@ -54,7 +54,10 @@
                     With over 4 years of proven industry experience, having me in your team will be a step in the right direction and I can't wait to amaze you.
                     Outside of work, I enjoy staying up-to-date with the latest trends and techniques in web development and software engineering, and I'm always looking forward to new challenges and opportunities to grow my skillset. I am also a strong believer
                      in the power of collaboration, and enjoy working with a team to create innovative and impactful projects.</p>
-                <a href="{% url 'resume' %}" class="btn cta">Download resume</a>
+                    <!-- The ?v... on the url is a cache bursting technique. If you
+                    cache issues again on the download, you can just change any of the
+                    numbers here and it will allow you download the exact file -->
+                     <a href="{% url 'resume' %}?v=1234567890" class="btn cta">Download resume</a>
             </div>
         </div>
     </section>
