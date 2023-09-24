@@ -208,10 +208,10 @@ a{
     margin-top:15%;
     }
 
-@media (max-width: 1279px){
+@media (min-width: 800px) and (max-width: 1227px){
     .hero-section .hero-content{
         /* margin-top:37%; @media (max-width: 991px)*/
-        margin-top: 18%;
+        margin-top: 2%;
         text-align:center
         }
 
@@ -225,9 +225,9 @@ a{
     } */
 
 
-@media (min-width: 600px) and (max-width: 1227px){
+@media (min-width: 600px) and (max-width: 799px){
     .hero-section .hero-content{
-        margin-top: 16%;
+        margin-top: 7%;
         text-align:center
         }
 }
