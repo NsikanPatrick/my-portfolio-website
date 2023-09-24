@@ -211,7 +211,7 @@ a{
 @media (min-width: 800px) and (max-width: 1227px){
     .hero-section .hero-content{
         /* margin-top:37%; @media (max-width: 991px)*/
-        margin-top: 2%;
+        margin-top: -3%;
         text-align:center
         }
 
@@ -227,7 +227,7 @@ a{
 
 @media (min-width: 600px) and (max-width: 799px){
     .hero-section .hero-content{
-        margin-top: 7%;
+        margin-top: 3%;
         text-align:center
         }
 }
